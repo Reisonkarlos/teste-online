@@ -13,4 +13,29 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;/*tudo que esta a baixo dessa teg é relativo */
+}
+
+.bola {
+    background-color: greenyellow;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;/*tudo que estiver a baixo do absolut é considerado absolute */
+    bottom: 15px;
+    left: 15px;
+    z-index:1;/*aqui tera que colocar uma camada por vez, 1 abaixo do 2 ,2 abaixo do 3 e etc*/
+}
+h1{
+    z-index: 2;
+}
+.queijo {
+background-color:blue;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;/*tudo que estiver a baixo do absolut é considerado absolute */
+    top: 90px;
+    opacity: 0.5;
+    z-index:1;/*aqui tera que colocar uma camada por vez, 1 abaixo do 2 ,2 abaixo do 3 e etc*/
 }
